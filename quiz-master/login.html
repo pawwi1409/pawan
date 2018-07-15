@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Quiz System</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src="js/login.js"></script>
+</head>
+<body>
+	<div id="main">
+		<form action="index.html" onsubmit="return login()">
+			<table>
+				<tr>
+					<td>Enter Username</td>
+					<td><input type="text" id="userNameId" name="userName" placeholder="Please enter your username" required/></td>
+					<td id="errUserNameId"></td>
+				</tr>
+				<tr>
+					<td>Enter Password</td>
+					<td><input type="password" id="passwordId" name="password" placeholder="Please enter your password" required/></td>
+					<td id="errPasswordId"></td>
+				</tr>
+			</table>
+			<input type="submit" value="Login">
+		</form>
+	</div>
+</body>
+</html>
